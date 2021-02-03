@@ -1,2 +1,2 @@
 # messenger-lite
-Simple messenger chat with vanilla javascript and database.
+Simple messenger chat with vanilla javascript, REST and database.

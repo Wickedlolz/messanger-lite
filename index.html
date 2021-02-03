@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <title>Messanger Lite</title>
+</head>
+<body>
+    <div id="main">
+        <textarea id="messages" cols="80" rows="12" disabled="true"></textarea>
+        <div id="controls">
+            <label for="author">Name: </label>
+            <input type="text" name="author" id="author" /><br>
+            <label for="content">Message: </label>
+            <input type="text" name="content" id="content" />
+            <div id="errorMessage" style="display: none;">asd</div>
+            <input id="submit" type="button" value="Send">
+            <input id="refresh" type="button" value="Refresh">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

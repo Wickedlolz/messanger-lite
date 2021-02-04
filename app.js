@@ -1,5 +1,12 @@
-window.onload = () => {
+window.onload = (e) => {
     loadChat();
+
+    console.log(document.body);
+    document.body.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendUserInfo(e);
+        }
+    });
 }
 
 const submitBtn = document.getElementById('submit');
@@ -25,7 +32,6 @@ function sendUserInfo(e) {
             body: JSON.stringify(initObj)
         }).then(loadChat);
     
-        author.value = '';
         content.value = '';
     } else {
         const error = { message: '' };
